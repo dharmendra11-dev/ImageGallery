@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/icno.png" />
+  <style>
+    
+  </style>
+</head>
+<body>
+<div class="page-wrapper">
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-title">Image Gallery</div>
+    <div class="nav-links">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('people')">People</button>
+      <button onclick="filterImages('city')">City</button>
+      <button onclick="filterImages('animals')">Animals</button>
+      <button onclick="filterImages('code')">Coding</button>
+    </div>
+  </nav>
+
+  <h1 class="gallery-title">Explore Photos</h1>
+
+  <div class="gallery">
+    <!-- Your image boxes go here -->
+    <div class="image-box nature"><img src="img/nature/1.jpg" alt="Nature 1" onclick="openLightbox(0)" /></div>
+    <div class="image-box code"><img src="img/city/13.jpg" alt="code 1" onclick="openLightbox(1)" /></div>
+    <div class="image-box people"><img src="img/people/1.jpg" alt="People 1" onclick="openLightbox(2)" /></div>
+    <div class="image-box city"><img src="img/city/1.jpg" alt="city 1" onclick="openLightbox(3)" /></div>
+
+    <div class="image-box city"><img src="img/city/11.jpg" alt="city 11" onclick="openLightbox(2)" /></div>
+    <div class="image-box city"><img src="img/city/5.jpg" alt="city 5" onclick="openLightbox(2)" /></div>
+    <div class="image-box nature"><img src="img/nature/2.jpg" alt="nature 2" onclick="openLightbox(2)" /></div>
+    <div class="image-box animals"><img src="img/animals/1.jpg" alt="animals 1" onclick="openLightbox(2)" /></div>
+
+    <div class="image-box code"><img src="img/code/2.jpg" alt="code 2" onclick="openLightbox(2)" /></div>
+    <div class="image-box city"><img src="img/city/3.jpg" alt="city 3" onclick="openLightbox(2)" /></div>
+    <div class="image-box code"><img src="img/code/3.jpg" alt="code 3" onclick="openLightbox(2)" /></div>
+    <div class="image-box nature"><img src="img/nature/5.jpg" alt="nature 5" onclick="openLightbox(2)" /></div>
+
+    <div class="image-box city"><img src="img/city/10.jpg" alt="city 10" onclick="openLightbox(2)" /></div>
+    <div class="image-box code"><img src="img/code/5.jpg" alt="code 5" onclick="openLightbox(2)" /></div>
+    <div class="image-box nature"><img src="img/nature/7.jpg" alt="nature 7" onclick="openLightbox(2)" /></div>
+    <div class="image-box people"><img src="img/people/3.jpg" alt="People 3" onclick="openLightbox(2)" /></div>
+
+    <div class="image-box code"><img src="img/code/31.jpg" alt="code 31" onclick="openLightbox(2)" /></div>
+    <div class="image-box people"><img src="img/people/13.jpg" alt="People 13" onclick="openLightbox(2)" /></div>
+    <div class="image-box code"><img src="img/code/17.jpg" alt="code 17" onclick="openLightbox(2)" /></div>
+    <div class="image-box people"><img src="img/people/2.jpg" alt="People 2" onclick="openLightbox(2)" /></div>
+
+    <div class="image-box nature"><img src="img/nature/9.jpg" alt="nature 9" onclick="openLightbox(2)" /></div>
+    <div class="image-box animals"><img src="img/animals/10.jpg" alt="animals 10" onclick="openLightbox(2)" /></div>
+    <div class="image-box nature"><img src="img/nature/11.jpg" alt="nature 11" onclick="openLightbox(2)" /></div>
+    <div class="image-box code"><img src="img/code/10.jpg" alt="code 10" onclick="openLightbox(2)" /></div>
+    <!-- Repeat more image boxes as needed -->
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+</div>
+  <!-- Footer -->
+<footer>
+  <p>Copyright &copy; 2025 CodeAlpha Internship Project | Designed by <i>Dharmendra Kumar</i></p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
